@@ -40,6 +40,9 @@ public class Hospital {
 					print(capacity,n);
 					break;
 				}
+				else if(capacity[i][0]==0 && capacity[i][1]==0) {
+					System.out.println("No beds to alocate");
+				}
 				else if(capacity[i][1]==0)
 					System.out.println("NO Beds to Allocate");
 				capacity[i][0] = capacity[i][0] - 1;
